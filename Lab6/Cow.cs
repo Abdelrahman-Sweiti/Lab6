@@ -8,9 +8,11 @@ namespace Lab6
 {
     public class Cow : Mammals
     {
+        public override bool MilkFeed => true;
 
+        public override string name => "Cow";
 
-        public Cow(int height, int width, bool MilkFeed) : base(height, width, MilkFeed)
+        public Cow(int height, int width ) : base(height, width)
         {
         }
 
@@ -27,7 +29,14 @@ namespace Lab6
             Console.WriteLine("Cows eats grass and Vegtables ");
         }
 
+        public override void IsDangerous()
+        {
+            Console.WriteLine("Cows are not dangerous , they are friendly ");        }
 
+        public override void Introduce(int a, int b)
+        {
+            Console.WriteLine($"this Cow height is {a} and it width {b}");
+        }
 
     }
 }

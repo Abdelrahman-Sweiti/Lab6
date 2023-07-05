@@ -8,14 +8,16 @@ namespace Lab6
 {
     public abstract class Mammals : Animal
     {
-        public bool MilkFeed { get; set; }
+        public abstract bool MilkFeed { get;  }
+        public abstract string name { get; }
 
 
-
-        public Mammals(int height, int width,bool MilkFeed) : base(height, width)
+        public Mammals(int height, int width) : base(height, width)
         {
-            MilkFeed = MilkFeed;
+            
         }
+
+        public abstract void IsDangerous() ;
 
 
         public override void Eat()

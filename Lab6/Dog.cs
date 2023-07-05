@@ -8,10 +8,18 @@ namespace Lab6
 {
     public class Dog : Mammals
     {
+        public override bool MilkFeed => true;
 
+        public override string name => "Dog";
 
-        public Dog(int height, int width, bool MilkFeed) : base(height, width, MilkFeed)
+        public Dog(int height, int width) : base(height, width)
         {
+        }
+
+
+        public override void IsDangerous()
+        {
+            Console.WriteLine("some Dogs are dangerous and some are not , its better to have caution when dealing with them ");
         }
 
 
