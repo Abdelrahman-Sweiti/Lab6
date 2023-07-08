@@ -41,6 +41,16 @@ namespace Lab6
             Console.WriteLine($"this Elephant height is {a} and it width {b}");
         }
 
+        public override void Swim()
+        {
+            Console.WriteLine("The Elephant is swimming.");
+        }
+
+        public override void Walk()
+        {
+            Console.WriteLine("the Elephant is walking");
+        }
+
 
     }
 }

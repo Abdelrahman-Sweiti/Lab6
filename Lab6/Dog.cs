@@ -40,6 +40,14 @@ namespace Lab6
             Console.WriteLine($"this dog height is {a} and it width {b}");
         }
 
+        public override void Walk()
+        {
+            Console.WriteLine("The dog is walking.");
+        }
 
+        public override void Swim()
+        {
+            Console.WriteLine("The dog is swimming.");
+        }
     }
 }

@@ -38,5 +38,15 @@ namespace Lab6
             Console.WriteLine($"this Cow height is {a} and it width {b}");
         }
 
+        public override void Swim()
+        {
+            Console.WriteLine("The Cows cant swim");
+        }
+
+        public override void Walk()
+        {
+            Console.WriteLine("the Cow is walking");
+        }
+
     }
 }
