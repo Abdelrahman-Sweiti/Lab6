@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab6
 {
-  public abstract   class Animal
+  public abstract   class Animal : IWalkable, ISwimmable
     {
         public Animal(int height, int width)
         {
@@ -26,8 +26,7 @@ namespace Lab6
             Console.WriteLine("this Animal do sleep !");
         }
 
-
-
-
+        public abstract void Walk();
+        public abstract void Swim();
     }
 }

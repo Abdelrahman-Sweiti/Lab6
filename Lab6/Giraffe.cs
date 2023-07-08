@@ -41,6 +41,16 @@ namespace Lab6
             Console.WriteLine($"this Giraffe height is {a} and it width {b}");
         }
 
+        public override void Swim()
+        {
+            Console.WriteLine("The Giraffes cant swim");
+        }
+
+        public override void Walk()
+        {
+            Console.WriteLine("the Giraffe is walking");
+        }
+
 
     }
 }

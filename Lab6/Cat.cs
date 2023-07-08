@@ -42,5 +42,15 @@ namespace Lab6
         }
 
 
+        public override void Swim()
+        {
+            Console.WriteLine("Cat is swimming");
+        }
+
+        public override void Walk()
+        {
+            Console.WriteLine("Cat is walking");
+        }
+
     }
 }
